@@ -1,0 +1,48 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Code Snippet: Assignment Activity</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/prism.css" id="styleLink">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+  </head>
+  <body>
+
+  <main>
+	  <div class="col">
+		<h2>Remove text replies and audio recordings from 'Assignment' activity type (i.e. only keep upload button).</h2>
+		<pre class="language-css line-numbers"><code>.tl-assignment-handles .tl-icon-stack-content, .tl-assignment-handles-inner .tl-icon-stack-content {<br />
+    color: black;<br />
+}<br />
+.tl-icon-stack .tl-icon-stack-content.icon-pencil {<br />
+    top: 11px;<br />
+    left: 12px;<br />
+    display: none;<br />
+}<br />
+.tl-icon-stack .tl-icon-stack-content.icon-mic {<br />
+    top: 11px;<br />
+    left: 14px;<br />
+    display: none;<br />
+}<br />
+.tl-assignment-handles .tl-icon-stack-background, .tl-assignment-handles-inner .tl-icon-stack-background {<br />
+    color: transparent !important;<br />
+}<br />
+.icon-circle:before {<br />
+    display:none !important;<br />
+}<br />
+.tl-icon-stack .tl-icon-stack-content.icon-comment {<br />
+    display:none;<br />
+}<br />
+.tl-icon-stack .tl-icon-stack-content.icon-edit {<br />
+    display:none;<br />
+}<br />
+.tl-icon-label{<br />
+    display:none;<br />
+}</code></pre>
+	  </div>
+  </main>
+  <script src="js/prism.js"></script>
+  </body>
+  </html>
